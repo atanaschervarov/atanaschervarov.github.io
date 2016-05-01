@@ -254,6 +254,13 @@
         })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
         ga('create', 'UA-67224957-1', 'auto');
         ga('send', 'pageview');
+
+        var videos = document.getElementsByTagName("video");
+
+        for (var i = 0; i < videos.length; i++)
+        {
+        	videos[i].play();
+        }
     </script>
 </body>
 
