@@ -1,33 +1,62 @@
-* { margin: 0; padding: 0; }
-
-body { font: 16px Helvetica, Sans-Serif; line-height: 24px;}
-
-.clear { clear: both; }
+body { font: 16px Helvetica, Sans-Serif; line-height: 24px; background-color:#F7F7F8;}
 
 #page-wrap { width: 800px; margin: 40px auto 60px; }
+#navigation {float: right;}
+#navigation ul { list-style-type: none; margin: 0; padding: 0; }
+#navigation ul li { float: left; padding: 0px 10px 0px 0px; display: block;}
+#navigation ul li a {color: #7D7D7D; letter-spacing: 0px; font-size: 12px; vertical-align: middle; text-decoration: none; border-bottom: 1px dotted #7D7D7D; }
 
-#pic { float: right; margin: -30px 30px 0 0; width: 230px; border-style:solid; border-width:10px; border-color:#fff; box-shadow: 1px 1px 5px #888888;}
+#navigation ul li img {vertical-align: middle;}
 
-h1 { margin: 0 0 16px 0; padding: 0 0 16px 0; font-size: 42px; font-weight: bold; letter-spacing: -2px; border-bottom: 1px solid #999; }
+#profile-picture { width:25%; border-style:solid; border-width:2px; border-color:#fff; box-shadow: 1px 1px 5px #888888; float:left; }
 
-h2 { font-size: 20px; margin: 0 0 6px 0; position: relative; }
+.img-circle { border-radius: 50%; }
 
-h2 span { position: absolute; bottom: 0; right: 0; font-style: italic; font-family: Georgia, Serif; font-size: 16px; color: #999; font-weight: normal; }
+#contact-info { float:left; width:73%; }
+#contact-info h1 { color:#363B42; margin: 40px 0 16px 20px; padding: 0 0 16px 0; font-size: 42px; font-weight: bold; letter-spacing: -2px; border-bottom: 1px solid #ccc; }
 
-p { margin: 0 0 16px 0; }
+#contact-info ul { margin: 0 0 5px 20px; }
 
-a { color: #999; text-decoration: none; border-bottom: 1px dotted #999; }
+#contact-info ul li { line-height: 36px; }
+#contact-info img { vertical-align: middle;}
+#contact-info a {margin-left: 10px; color: #F1654C; text-decoration: none; border-bottom: 1px dotted #F1654C; }
 
-a:hover { border-bottom-style: solid; color: black; }
+.clear { clear:both; }
 
-ul { margin: 0 0 32px 17px; }
+#introduction { width: 90%; margin: 30px auto; font: 17px Helvetica, Sans-Serif; line-height: 24px;}
+#introduction p { font-family: Georgia, Serif; font-style: italic; color:#7D7D7D; }
+#introduction a {color: #F1654C; text-decoration: none; border-bottom: 1px dotted #F1654C; }
 
-#objective { width: 500px; float: left; }
+.items h1 { color:#7D7D7D; margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0; font-size: 25px; font-weight: bold; letter-spacing: 0px; font-style: italic; border-bottom: 1px solid #ccc;}
+.items ul { width:90%; margin: 0px auto 50px; }
 
-#objective p { font-family: Georgia, Serif; font-style: italic; color: #666; }
+.items h2 { color:#363B42; margin: 20px 0px 0px 0px; padding: 0px 0px 0px 0;  font-weight: bold; font-size: 18px; position: relative;}
 
-dt { font-style: italic; font-weight: bold; font-size: 18px; text-align: right; padding: 0 26px 0 0; width: 150px; float: left; height: 100px; border-right: 1px solid #999;  }
+.items h2 span {position: absolute; right:0; bottom: 0; font-style: italic; font-family: Georgia, Serif; font-size: 18px; color: #5d5d5d; font-weight: normal;}
 
-dd { width: 600px; float: right; }
+.items p {margin: 10px 0px 0px 0px; padding: 0px 150px 0px 20px; line-height: 24px; font-size: 16px; font-family: Georgia, Serif; font-style: italic; color:#7D7D7D;}
 
-dd.clear { float: none; margin: 0; height: 15px; }
+.items a { color: #F1654C; text-decoration: none; border-bottom: 1px dotted #F1654C; }
+
+#projects h1 { color:#7D7D7D; margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0; font-size: 20px; font-weight: bold; letter-spacing: 0px; border-bottom: 1px solid #ccc; }
+
+.project { margin: 25px 0px 0px 0px; padding-bottom: 25px; border-bottom: 1px solid #ccc;}
+
+.project a {color: #F1654C; text-decoration: none; border-bottom: 1px dotted #F1654C;}
+.project-details { float: left; width: 35%; padding-right:2%;}
+.project-details h2 {color:#363B42; font-size: 20px; font-weight: bold; letter-spacing: 0px;}
+.project-details p {margin: 10px 0px 20px 0px; line-height: 24px; font-size: 16px; font-family: Georgia, Serif; font-style: italic; color:#7D7D7D;}
+.project-details ol {list-style: circle; padding-left: 25px; line-height: 24px; font-size: 16px; font-family: Georgia, Serif; font-style: normal; color:#7D7D7D;}
+
+.project-media { float: right; width: 60%;}
+
+
+.p1-color1 { color: #F7F7F8; }
+.p1-color2 { color: #E3E4E5; }
+.p1-color3 { color: #CCCCCC; }
+.p1-color4 { color: #7D7D7D; }
+.p1-color5 { color: #363B42; }
+
+.social {width: 100%;}
+.social ul {width: 120px; margin: 0px auto;}
+.social ul li { float: left; padding: 5px; padding-top: 20px;}
