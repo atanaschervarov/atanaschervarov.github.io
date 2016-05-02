@@ -18,6 +18,26 @@
     <link rel="stylesheet" type="text/css" href="css/reset.css"/>
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
 
+    <script src="js/docready.js"></script>
+
+    <script type="text/javascript">
+
+    	docReady(function() {
+    		
+    		var videos = document.getElementsByTagName("video");
+
+	        for (var i = 0; i < videos.length; i++)
+	        {
+	        	videos[i].play();
+
+	        	videos[i].addEventListener('click',function(){
+	        		this.play();
+				}, false);
+	        }
+
+    	});
+    </script>
+    
 </head>
 
 <body>
@@ -231,7 +251,7 @@
 					<video style="width:100%;" poster="res/posters/mahjong-poster.jpg" preload="auto" autoplay="autoplay" loop="loop" webkit-playsinline>
 							<source src="res/videos/mahjong-optimized.mp4">
 							<source src="res/videos/mahjong.webm" type="video/webm">
-							<source src="res/videos/mahjong-optimized.mp4" type="video/mp4">
+							<source src="res/videos/mahjong.mp4" type="video/mp4">
 					</video>
 				</div>
 				<div class="clear"></div>
@@ -255,18 +275,6 @@
         })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
         ga('create', 'UA-67224957-1', 'auto');
         ga('send', 'pageview');
-
-        var videos = document.getElementsByTagName("video");
-
-        for (var i = 0; i < videos.length; i++)
-        {
-        	videos[i].play();
-        	
-        	videos[i].addEventListener('click',function(){
-        		this.play();
-			}, false);
-        }
-
     </script>
 </body>
 
