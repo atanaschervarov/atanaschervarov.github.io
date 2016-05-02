@@ -43,7 +43,7 @@
 
 				<h1>Atanas Chervarov</h1>
 
-				<ul class="">
+				<ul>
 					<li><a href="mailto:a.chervarov@gmail.com" class="email">a.chervarov@gmail.com</a></li>
 					<li><a href="https://bg.linkedin.com/pub/atanas-chervarov/73/495/9a1" class="linkedin">Atanas Chervarov</a></li>
 					<li><a href="https://twitter.com/achervarov" class="twitter">@achervarov</a></li>
@@ -229,8 +229,9 @@
 				</div>
 				<div class="project-media">
 					<video style="width:100%;" poster="res/posters/mahjong-poster.jpg" preload="auto" autoplay="autoplay" loop="loop" webkit-playsinline>
+							<source src="res/videos/mahjong-optimized.mp4">
 							<source src="res/videos/mahjong.webm" type="video/webm">
-							<source src="res/videos/mahjong.mp4" type="video/mp4">
+							<source src="res/videos/mahjong-optimized.mp4" type="video/mp4">
 					</video>
 				</div>
 				<div class="clear"></div>
@@ -259,10 +260,13 @@
 
         for (var i = 0; i < videos.length; i++)
         {
+        	videos[i].play();
+        	
         	videos[i].addEventListener('click',function(){
         		this.play();
 			}, false);
         }
+
     </script>
 </body>
 
